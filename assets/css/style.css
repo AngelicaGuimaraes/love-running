@@ -69,7 +69,8 @@ h2 {
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: white;
 
 }
@@ -110,7 +111,7 @@ h2 {
 
     padding-top: 40px;
     padding-left: 10px;
-    
+
 
     background-color: rgba(241, 109, 107, .7);
 
@@ -209,7 +210,7 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0,0, 0, .6);
+    background-color: rgba(0, 0, 0, .6);
     width: 20%;
     height: 300px;
     float: left;
@@ -233,7 +234,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -253,26 +254,27 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
 /* media queries */
 
 /* for larger to medium screens size from 1200px wide and down */
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #club-ethos {
-        width:  65%;
+        width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
 
     #welcome {
         padding: 30px 0;
-        marging: 0;
+        margin: 0;
     }
 
-    #left-about, #right-about {
+    #left-about,
+    #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -292,7 +294,7 @@ footer {
 
 /* for medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
-    
+
     #menu {
         clear: left;
         float: left;
@@ -300,3 +302,31 @@ footer {
         margin-bottom: 20px;
         line-height: 25px;
     }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading,
+    .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2,
+    .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
